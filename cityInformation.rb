@@ -1,30 +1,53 @@
 require 'rspec'
 require 'net/http'
 require 'json'
+require 'addressable/uri'
 
 class CityInformation
-	attr_accessor :city, :latitude, :longitude
-	def initialize(cityname)
-		@city = cityname
+	attr_accessor :city
+	def initialize(city)
+		@city = city
 	end
-	
-	def locate
-		response = {"latitude"=>"7.9432","longitude"=>"51.8639"}
-		@latitude = response["latitude"].to_f
-		@longitude = response["longitude"].to_f
+	def getInfo
+		city.locate
 	end
 end
 
 
 class Cloudmade
-	attr_reader :api_key, :api_url
+	attr_reader :api_key, :api_url, :request_url,:city,:response
 	def initialize(api_key)
 		@api_key = api_key
 		@api_url = "http://geocoding.cloudmade.com/#{@api_key}/geocoding/v2/find.js"
+		@request_url = Addressable::URI.parse @api_url
+		@city = ""
+		@response = ""
 	end
+	def locate(city)
+		@city = city
+		searchForCity
+		getLatLng
+		
+	end
+	def searchForCity
+		request_string = "?query=#{@city}"
+		@response = buildQuery(request_string).connect
+	end
+	def getLatLng
+		json_response = parseResponse
+		if json_response.has_key? "found" 
+			if json_response["found"] > 0
+				latitude = json_response["features"][0]["centroid"]["coordinates"][0].to_f
+				longitude = json_response["features"][0]["centroid"]["coordinates"][1].to_f
+				{latitude:latitude,longitude:longitude}
+			end
+		else
+			raise RangeError, "Error Message" 
+		end
+	end
+	
 	def connect
-		uri = URI(@api_url)
-		response = Net::HTTP.get_response(uri)
+		response = Net::HTTP.get_response(@request_url)
 		
 		case response
 		when Net::HTTPSuccess
@@ -34,16 +57,12 @@ class Cloudmade
 		end
 		
 	end
-	def parseResponse(response)
-		repo_info = JSON.parse response
+	def parseResponse()
+		JSON.parse @response
 	end
-	def findCity(cityname)
-		params = {"query"=>cityname}
-		buildQuery(params).connect
-	end
-	def buildQuery(params)
-		url_params = URI.escape(params.collect{|k,v| "#{k}=#{v}"}.join('&'))
-		@api_url = "#{@api_url}?#{url_params}"
+	
+	def buildQuery(request_string)
+		@request_url = Addressable::URI.escape("#{@api_url}#{request_string}",Addressable::URI)
 		self
 	end
 end

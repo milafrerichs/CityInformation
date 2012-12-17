@@ -1,32 +1,26 @@
 require 'spec_helper'
 
 describe CityInformation do 
-	subject {CityInformation.new("Berlin")}
-	its(:city) { should == "Berlin" }
-	its(:latitude) { should be_nil}
-	its(:longitude) { should be_nil}
-	context 'Location' do
-		
-		describe 'connect to cloudmade API' do
-			let(:cloudmade) { Cloudmade.new("5417a6b95e8544b7a8814ac874ebd27b")}
-			it 'has an API Key' do
-				cloudmade.api_key.should_not be_nil
-			end
-			it 'returns an json string' do
-				#expect { mapbox.locate}.to 
-			end
-		end
-		
-		describe 'retrieve location' do
-			it 'has a longitude' do
-				expect { subject.locate}.to change {subject.longitude}.to be_kind_of(Float)
-			end
-			it 'has a latitude' do
-				expect { subject.locate}.to change {subject.latitude}.to be_kind_of(Float)
-			end
-		end
-	end
+	subject {CityInformation.new(berlin)}
+	let(:berlin) { City.new("Berlin")}
+	its(:city) { should == berlin }
 	
+	context '#getInfo' do
+		it 'can show information' do
+				subject.city.country = "Germany"
+				subject.city.country.should_not be_nil
+				subject.should respond_to(:getInfo)
+			end
+			it 'returns an error if no country is set' do
+				subject.city.country.should be_nil
+				expect{subject.getInfo}.to raise_error()
+			end
+			it 'calls city locate' do
+				subject.city.should_receive(:locate)
+				subject.getInfo
+			end
+	end
+
 	context 'weather' do
 		describe 'connect to yahoo weater' do
 			let(:yahoo) { Yahoo.new }

@@ -55,9 +55,9 @@ describe Cloudmade do
 		end
 		
 		it 'connects to cloudmade' do
-			subject.should_receive(:connect)
-			subject.stub(:getLatLng).and_return(location)
-			subject.locate("Berlin")
+			subject.should_receive(:connect).and_return("{}")
+
+			subject.parseResponse
 		end
 		
 		context 'has no results' do

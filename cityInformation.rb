@@ -9,6 +9,7 @@ class CityInformation
 		@city = city
 	end
 	def getInfo
+		raise ArgumentError unless city.country
 		city.locate
 	end
 end
@@ -31,7 +32,7 @@ class Cloudmade
 	end
 	def searchForCity
 		request_string = "?query=#{@city}"
-		@response = buildQuery(request_string).connect
+		buildQuery(request_string)
 	end
 	def getLatLng
 		json_response = parseResponse
@@ -57,8 +58,10 @@ class Cloudmade
 		end
 		
 	end
-	def parseResponse()
-		JSON.parse @response
+	def parseResponse
+		
+			JSON.parse connect
+		
 	end
 	
 	def buildQuery(request_string)

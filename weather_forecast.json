@@ -1,0 +1,744 @@
+{
+  "response":  {
+    "version": "0.1",
+    "termsofService": "http://www.wunderground.com/weather/api/d/terms.html",
+    "features":  {
+      "forecast": 1,
+      "geolookup": 1
+    }
+  },
+  "location":  {
+    "type": "INTLCITY",
+    "country": "FR",
+    "country_iso3166": "FR",
+    "country_name": "France",
+    "state": "",
+    "city": "Paris",
+    "tz_short": "CET",
+    "tz_long": "Europe/Paris",
+    "lat": "49.02000046",
+    "lon": "2.52999997",
+    "zip": "00000",
+    "magic": "1",
+    "wmo": "07157",
+    "l": "/q/zmw:00000.1.07157",
+    "requesturl": "global/stations/07157.html",
+    "wuiurl": "http://www.wunderground.com/global/stations/07157.html",
+    "nearby_weather_stations":  {
+      "airport":  {
+        "station":  [
+           {
+            "city": "Paris",
+            "state": "",
+            "country": "FR",
+            "icao": "LFPG",
+            "lat": "49.02000046",
+            "lon": "2.52999997"
+          },
+           {
+            "city": "Paris Le Bourget",
+            "state": "",
+            "country": "FR",
+            "icao": "LFPB",
+            "lat": "48.97000122",
+            "lon": "2.45000005"
+          },
+           {
+            "city": "Creil",
+            "state": "",
+            "country": "FR",
+            "icao": "LFPC",
+            "lat": "49.25000000",
+            "lon": "2.51999998"
+          }
+        ]
+      },
+      "pws":  {
+        "station":  [
+           {
+            "neighborhood": "",
+            "city": "GRESSY",
+            "state": "ILE-DE-FRANCE",
+            "country": "France",
+            "id": "IILEDEFR55",
+            "lat": 48.966984,
+            "lon": 2.671319,
+            "distance_km": 11,
+            "distance_mi": 7
+          },
+           {
+            "neighborhood": "Ile de France, France",
+            "city": "COUBRON",
+            "state": "ÎLE-DE-FRANCE",
+            "country": "FRANCE",
+            "id": "ILEDEFRA10",
+            "lat": 48.916172,
+            "lon": 2.568412,
+            "distance_km": 11,
+            "distance_mi": 7
+          },
+           {
+            "neighborhood": "",
+            "city": "CHAUMONTEL",
+            "state": "ILE-DE-FRANCE",
+            "country": "FRANCE",
+            "id": "IILEDEFR62",
+            "lat": 49.122692,
+            "lon": 2.431488,
+            "distance_km": 13,
+            "distance_mi": 8
+          },
+           {
+            "neighborhood": "Meteo 93",
+            "city": "Montfermeil",
+            "state": "SEINE SAINT DENIS",
+            "country": "FRANCE",
+            "id": "ISEINESA2",
+            "lat": 48.89558,
+            "lon": 2.552691,
+            "distance_km": 13,
+            "distance_mi": 8
+          },
+           {
+            "neighborhood": "APRSWXNET Paris FR",
+            "city": "Paris Le Bourget",
+            "state": "",
+            "country": "FR",
+            "id": "MD7698",
+            "lat": 48.873001,
+            "lon": 2.48533,
+            "distance_km": 16,
+            "distance_mi": 9
+          },
+           {
+            "neighborhood": "",
+            "city": "ROSNY SOUS BOIS",
+            "state": "Île-de-France",
+            "country": "France",
+            "id": "IILEDEFR64",
+            "lat": 48.870667,
+            "lon": 2.491427,
+            "distance_km": 16,
+            "distance_mi": 10
+          },
+           {
+            "neighborhood": "",
+            "city": "Neuilly-sur-Marne",
+            "state": "Ile-de-France",
+            "country": "FRANCE",
+            "id": "IBOBIGNY2",
+            "lat": 48.859058,
+            "lon": 2.517753,
+            "distance_km": 17,
+            "distance_mi": 10
+          },
+           {
+            "neighborhood": "",
+            "city": "Eaubonne",
+            "state": "ILE-DE-FRANCE",
+            "country": "FRANCE",
+            "id": "ILEDEFRA7",
+            "lat": 48.987358,
+            "lon": 2.269639,
+            "distance_km": 19,
+            "distance_mi": 11
+          },
+           {
+            "neighborhood": "",
+            "city": "Paris - 20eme arrondissement",
+            "state": "ILE DE FRANCE",
+            "country": "FRANCE",
+            "id": "IILEDEFR29",
+            "lat": 48.866634,
+            "lon": 2.395449,
+            "distance_km": 19,
+            "distance_mi": 11
+          },
+           {
+            "neighborhood": "Gouvieux, Avily-Saint-Leonard, Orry-La-Ville, Lamorlaye, Coye la Foret",
+            "city": "Chantilly",
+            "state": "Picardie",
+            "country": "FRANCE",
+            "id": "IPICARDI6",
+            "lat": 49.193256,
+            "lon": 2.473681,
+            "distance_km": 19,
+            "distance_mi": 11
+          },
+           {
+            "neighborhood": "",
+            "city": "Paris XX",
+            "state": "ILE-DE-FRANCE",
+            "country": "FRANCE",
+            "id": "IILEDEFR60",
+            "lat": 48.85424,
+            "lon": 2.397294,
+            "distance_km": 20,
+            "distance_mi": 12
+          },
+           {
+            "neighborhood": "Euro Disney",
+            "city": "Lagny-sur-Marne",
+            "state": "Ile-de-France",
+            "country": "FRANCE",
+            "id": "IILEDEFR47",
+            "lat": 48.875416,
+            "lon": 2.718719,
+            "distance_km": 21,
+            "distance_mi": 12
+          },
+           {
+            "neighborhood": "",
+            "city": "Argenteuil",
+            "state": "Val d'oise",
+            "country": "France",
+            "id": "IARGENTE1",
+            "lat": 48.950661,
+            "lon": 2.25,
+            "distance_km": 21,
+            "distance_mi": 13
+          },
+           {
+            "neighborhood": "",
+            "city": "SENLIS",
+            "state": "OISE",
+            "country": "FRANCE",
+            "id": "IOISESEN2",
+            "lat": 49.211945,
+            "lon": 2.596111,
+            "distance_km": 21,
+            "distance_mi": 13
+          },
+           {
+            "neighborhood": "paris",
+            "city": "Saint Maurice",
+            "state": "ILE DE FRANCE",
+            "country": "FRANCE",
+            "id": "IILEDEFR65",
+            "lat": 48.815304,
+            "lon": 2.46314,
+            "distance_km": 23,
+            "distance_mi": 13
+          },
+           {
+            "neighborhood": "",
+            "city": "Paris-centre",
+            "state": "Paris",
+            "country": "France",
+            "id": "I75003PA1",
+            "lat": 48.851727,
+            "lon": 2.335968,
+            "distance_km": 23,
+            "distance_mi": 14
+          },
+           {
+            "neighborhood": "",
+            "city": "Paris",
+            "state": "ILE-DE-FRANCE",
+            "country": "FRANCE",
+            "id": "IILEDEFR28",
+            "lat": 48.847187,
+            "lon": 2.33143,
+            "distance_km": 24,
+            "distance_mi": 14
+          },
+           {
+            "neighborhood": "Le Parc Saint Maur",
+            "city": "Saint Maur Des Fosses",
+            "state": "ILE DE FRANCE",
+            "country": "FRANCE",
+            "id": "IILEDEFR12",
+            "lat": 48.805,
+            "lon": 2.489,
+            "distance_km": 24,
+            "distance_mi": 14
+          },
+           {
+            "neighborhood": "",
+            "city": "Bezons",
+            "state": "VAL D'OISE",
+            "country": "FRANCE",
+            "id": "IVALDOIS2",
+            "lat": 48.930378,
+            "lon": 2.22305,
+            "distance_km": 24,
+            "distance_mi": 14
+          },
+           {
+            "neighborhood": "",
+            "city": "Meaux",
+            "state": "ÎLE-DE-FRANCE",
+            "country": "FRANCE",
+            "id": "ILEDEFRA19",
+            "lat": 48.974411,
+            "lon": 2.895059,
+            "distance_km": 27,
+            "distance_mi": 16
+          },
+           {
+            "neighborhood": "Sucy en Brie 94",
+            "city": "Sucy-en-Brie",
+            "state": "ILE-DE-FRANCE",
+            "country": "FRANCE",
+            "id": "IILEDEFR58",
+            "lat": 48.773994,
+            "lon": 2.510762,
+            "distance_km": 27,
+            "distance_mi": 16
+          },
+           {
+            "neighborhood": "",
+            "city": "Roissy-en-Brie",
+            "state": "Île-de-France",
+            "country": "France",
+            "id": "ILEDEFRA3",
+            "lat": 48.789963,
+            "lon": 2.670779,
+            "distance_km": 27,
+            "distance_mi": 16
+          },
+           {
+            "neighborhood": "",
+            "city": "Ozoir La Ferriere",
+            "state": "ÎLE-DE-FRANCE",
+            "country": "FRANCE",
+            "id": "ILEDEFRA12",
+            "lat": 48.77594,
+            "lon": 2.682488,
+            "distance_km": 29,
+            "distance_mi": 17
+          },
+           {
+            "neighborhood": "Seine et Marne",
+            "city": "Ozoir la Ferriere",
+            "state": "Seine et Marne",
+            "country": "France",
+            "id": "IOZOIRLA3",
+            "lat": 48.769604,
+            "lon": 2.658329,
+            "distance_km": 29,
+            "distance_mi": 17
+          },
+           {
+            "neighborhood": "Quartier du Grillon",
+            "city": "ERAGNY",
+            "state": "IDF",
+            "country": "FRANCE",
+            "id": "IIDFERAG2",
+            "lat": 49.01712,
+            "lon": 2.113466,
+            "distance_km": 30,
+            "distance_mi": 18
+          },
+           {
+            "neighborhood": "Pontoise",
+            "city": "Pontoise",
+            "state": "ÎLE-DE-FRANCE",
+            "country": "FRANCE",
+            "id": "ILEDEFRA8",
+            "lat": 49.058792,
+            "lon": 2.11647,
+            "distance_km": 30,
+            "distance_mi": 18
+          },
+           {
+            "neighborhood": "",
+            "city": "Eragny",
+            "state": "ILE-DE-FRANCE",
+            "country": "FRANCE",
+            "id": "IILEDEFR44",
+            "lat": 49.01527,
+            "lon": 2.105944,
+            "distance_km": 30,
+            "distance_mi": 18
+          },
+           {
+            "neighborhood": "",
+            "city": "Ozoir la Ferriere",
+            "state": "Melun",
+            "country": "France",
+            "id": "IOZOIRLA2",
+            "lat": 48.761585,
+            "lon": 2.690653,
+            "distance_km": 31,
+            "distance_mi": 18
+          }
+        ]
+      }
+    }
+  },
+  "forecast":  {
+    "txt_forecast":  {
+      "date": "1:00 PM CET",
+      "forecastday":  [
+         {
+          "period": 0,
+          "icon": "chancerain",
+          "icon_url": "http://icons-ak.wxug.com/i/c/k/chancerain.gif",
+          "title": "Tuesday",
+          "fcttext": "Overcast with a chance of rain. High of 46F. Winds from the West at 10 to 15 mph. Chance of rain 40%.",
+          "fcttext_metric": "Overcast with a chance of rain. High of 8C. Breezy. Winds from the West at 15 to 25 km/h. Chance of rain 40%.",
+          "pop": "40"
+        },
+         {
+          "period": 1,
+          "icon": "mostlycloudy",
+          "icon_url": "http://icons-ak.wxug.com/i/c/k/mostlycloudy.gif",
+          "title": "Tuesday Night",
+          "fcttext": "Mostly cloudy in the evening, then overcast. Low of 36F. Winds less than 5 mph.",
+          "fcttext_metric": "Mostly cloudy in the evening, then overcast. Low of 2C. Winds less than 5 km/h.",
+          "pop": "0"
+        },
+         {
+          "period": 2,
+          "icon": "cloudy",
+          "icon_url": "http://icons-ak.wxug.com/i/c/k/cloudy.gif",
+          "title": "Wednesday",
+          "fcttext": "Overcast with a chance of rain in the afternoon. High of 45F. Winds from the SE at 5 to 15 mph. Chance of rain 20%.",
+          "fcttext_metric": "Overcast with a chance of rain in the afternoon. High of 7C. Breezy. Winds from the SE at 10 to 20 km/h.",
+          "pop": "20"
+        },
+         {
+          "period": 3,
+          "icon": "chancerain",
+          "icon_url": "http://icons-ak.wxug.com/i/c/k/chancerain.gif",
+          "title": "Wednesday Night",
+          "fcttext": "Overcast with a chance of rain. Low of 43F. Winds from the SE at 10 to 15 mph. Chance of rain 70% with rainfall amounts near 0.4 in. possible.",
+          "fcttext_metric": "Overcast with a chance of rain. Low of 6C. Breezy. Winds from the SE at 15 to 25 km/h. Chance of rain 70% with rainfall amounts near 11.4 mm possible.",
+          "pop": "70"
+        },
+         {
+          "period": 4,
+          "icon": "chancerain",
+          "icon_url": "http://icons-ak.wxug.com/i/c/k/chancerain.gif",
+          "title": "Thursday",
+          "fcttext": "Overcast with a chance of rain. High of 54F. Breezy. Winds from the South at 15 to 20 mph. Chance of rain 50%.",
+          "fcttext_metric": "Overcast with a chance of rain. High of 12C. Windy. Winds from the South at 20 to 30 km/h. Chance of rain 50%.",
+          "pop": "50"
+        },
+         {
+          "period": 5,
+          "icon": "mostlycloudy",
+          "icon_url": "http://icons-ak.wxug.com/i/c/k/mostlycloudy.gif",
+          "title": "Thursday Night",
+          "fcttext": "Partly cloudy in the evening, then overcast. Low of 45F. Winds from the SW at 5 to 15 mph.",
+          "fcttext_metric": "Partly cloudy in the evening, then overcast. Low of 7C. Breezy. Winds from the SW at 10 to 20 km/h.",
+          "pop": "0"
+        },
+         {
+          "period": 6,
+          "icon": "chancerain",
+          "icon_url": "http://icons-ak.wxug.com/i/c/k/chancerain.gif",
+          "title": "Friday",
+          "fcttext": "Overcast with a chance of rain. High of 48F. Winds less than 5 mph. Chance of rain 40%.",
+          "fcttext_metric": "Overcast with a chance of rain. High of 9C. Winds less than 5 km/h. Chance of rain 40%.",
+          "pop": "40"
+        },
+         {
+          "period": 7,
+          "icon": "chancerain",
+          "icon_url": "http://icons-ak.wxug.com/i/c/k/chancerain.gif",
+          "title": "Friday Night",
+          "fcttext": "Overcast with a chance of rain. Fog overnight. Low of 41F. Winds from the SSW at 5 to 20 mph. Chance of rain 60% with rainfall amounts near 0.8 in. possible.",
+          "fcttext_metric": "Overcast with a chance of rain. Fog overnight. Low of 5C. Breezy. Winds from the SSW at 10 to 30 km/h. Chance of rain 60% with rainfall amounts near 19.6 mm possible.",
+          "pop": "60"
+        }
+      ]
+    },
+    "simpleforecast":  {
+      "forecastday":  [
+         {
+          "date":  {
+            "epoch": "1355864400",
+            "pretty": "10:00 PM CET on December 18, 2012",
+            "day": 18,
+            "month": 12,
+            "year": 2012,
+            "yday": 352,
+            "hour": 22,
+            "min": "00",
+            "sec": 0,
+            "isdst": "0",
+            "monthname": "December",
+            "weekday_short": "Tue",
+            "weekday": "Tuesday",
+            "ampm": "PM",
+            "tz_short": "CET",
+            "tz_long": "Europe/Paris"
+          },
+          "period": 1,
+          "high":  {
+            "fahrenheit": "46",
+            "celsius": "8"
+          },
+          "low":  {
+            "fahrenheit": "36",
+            "celsius": "2"
+          },
+          "conditions": "Chance of Rain",
+          "icon": "chancerain",
+          "icon_url": "http://icons-ak.wxug.com/i/c/k/chancerain.gif",
+          "skyicon": "mostlycloudy",
+          "pop": 40,
+          "qpf_allday":  {
+            "in": 0.1,
+            "mm": 2.5
+          },
+          "qpf_day":  {
+            "in": 0,
+            "mm": 0
+          },
+          "qpf_night":  {
+            "in": 0,
+            "mm": 0
+          },
+          "snow_allday":  {
+            "in": 0,
+            "cm": 0
+          },
+          "snow_day":  {
+            "in": 0,
+            "cm": 0
+          },
+          "snow_night":  {
+            "in": 0,
+            "cm": 0
+          },
+          "maxwind":  {
+            "mph": 14,
+            "kph": 22,
+            "dir": "West",
+            "degrees": 261
+          },
+          "avewind":  {
+            "mph": 8,
+            "kph": 13,
+            "dir": "WNW",
+            "degrees": 296
+          },
+          "avehumidity": 82,
+          "maxhumidity": 91,
+          "minhumidity": 75
+        },
+         {
+          "date":  {
+            "epoch": "1355950800",
+            "pretty": "10:00 PM CET on December 19, 2012",
+            "day": 19,
+            "month": 12,
+            "year": 2012,
+            "yday": 353,
+            "hour": 22,
+            "min": "00",
+            "sec": 0,
+            "isdst": "0",
+            "monthname": "December",
+            "weekday_short": "Wed",
+            "weekday": "Wednesday",
+            "ampm": "PM",
+            "tz_short": "CET",
+            "tz_long": "Europe/Paris"
+          },
+          "period": 2,
+          "high":  {
+            "fahrenheit": "45",
+            "celsius": "7"
+          },
+          "low":  {
+            "fahrenheit": "43",
+            "celsius": "6"
+          },
+          "conditions": "Chance of Rain",
+          "icon": "cloudy",
+          "icon_url": "http://icons-ak.wxug.com/i/c/k/cloudy.gif",
+          "skyicon": "cloudy",
+          "pop": 20,
+          "qpf_allday":  {
+            "in": 0.25,
+            "mm": 6.3
+          },
+          "qpf_day":  {
+            "in": 0.03,
+            "mm": 0.8
+          },
+          "qpf_night":  {
+            "in": 0.45,
+            "mm": 11.4
+          },
+          "snow_allday":  {
+            "in": 0,
+            "cm": 0
+          },
+          "snow_day":  {
+            "in": 0,
+            "cm": 0
+          },
+          "snow_night":  {
+            "in": 0,
+            "cm": 0
+          },
+          "maxwind":  {
+            "mph": 14,
+            "kph": 22,
+            "dir": "SE",
+            "degrees": 140
+          },
+          "avewind":  {
+            "mph": 12,
+            "kph": 19,
+            "dir": "SE",
+            "degrees": 142
+          },
+          "avehumidity": 83,
+          "maxhumidity": 96,
+          "minhumidity": 80
+        },
+         {
+          "date":  {
+            "epoch": "1356037200",
+            "pretty": "10:00 PM CET on December 20, 2012",
+            "day": 20,
+            "month": 12,
+            "year": 2012,
+            "yday": 354,
+            "hour": 22,
+            "min": "00",
+            "sec": 0,
+            "isdst": "0",
+            "monthname": "December",
+            "weekday_short": "Thu",
+            "weekday": "Thursday",
+            "ampm": "PM",
+            "tz_short": "CET",
+            "tz_long": "Europe/Paris"
+          },
+          "period": 3,
+          "high":  {
+            "fahrenheit": "54",
+            "celsius": "12"
+          },
+          "low":  {
+            "fahrenheit": "45",
+            "celsius": "7"
+          },
+          "conditions": "Chance of Rain",
+          "icon": "chancerain",
+          "icon_url": "http://icons-ak.wxug.com/i/c/k/chancerain.gif",
+          "skyicon": "partlycloudy",
+          "pop": 50,
+          "qpf_allday":  {
+            "in": 0.31,
+            "mm": 7.9
+          },
+          "qpf_day":  {
+            "in": 0.08,
+            "mm": 2
+          },
+          "qpf_night":  {
+            "in": 0.04,
+            "mm": 1
+          },
+          "snow_allday":  {
+            "in": 0,
+            "cm": 0
+          },
+          "snow_day":  {
+            "in": 0,
+            "cm": 0
+          },
+          "snow_night":  {
+            "in": 0,
+            "cm": 0
+          },
+          "maxwind":  {
+            "mph": 17,
+            "kph": 27,
+            "dir": "SSW",
+            "degrees": 206
+          },
+          "avewind":  {
+            "mph": 13,
+            "kph": 21,
+            "dir": "SW",
+            "degrees": 218
+          },
+          "avehumidity": 83,
+          "maxhumidity": 87,
+          "minhumidity": 76
+        },
+         {
+          "date":  {
+            "epoch": "1356123600",
+            "pretty": "10:00 PM CET on December 21, 2012",
+            "day": 21,
+            "month": 12,
+            "year": 2012,
+            "yday": 355,
+            "hour": 22,
+            "min": "00",
+            "sec": 0,
+            "isdst": "0",
+            "monthname": "December",
+            "weekday_short": "Fri",
+            "weekday": "Friday",
+            "ampm": "PM",
+            "tz_short": "CET",
+            "tz_long": "Europe/Paris"
+          },
+          "period": 4,
+          "high":  {
+            "fahrenheit": "48",
+            "celsius": "9"
+          },
+          "low":  {
+            "fahrenheit": "41",
+            "celsius": "5"
+          },
+          "conditions": "Chance of Rain",
+          "icon": "chancerain",
+          "icon_url": "http://icons-ak.wxug.com/i/c/k/chancerain.gif",
+          "skyicon": "cloudy",
+          "pop": 40,
+          "qpf_allday":  {
+            "in": 0.14,
+            "mm": 3.6
+          },
+          "qpf_day":  {
+            "in": 0.04,
+            "mm": 1
+          },
+          "qpf_night":  {
+            "in": 0.77,
+            "mm": 19.6
+          },
+          "snow_allday":  {
+            "in": 0,
+            "cm": 0
+          },
+          "snow_day":  {
+            "in": 0,
+            "cm": 0
+          },
+          "snow_night":  {
+            "in": 0,
+            "cm": 0
+          },
+          "maxwind":  {
+            "mph": 7,
+            "kph": 11,
+            "dir": "WSW",
+            "degrees": 253
+          },
+          "avewind":  {
+            "mph": 5,
+            "kph": 8,
+            "dir": "West",
+            "degrees": 264
+          },
+          "avehumidity": 91,
+          "maxhumidity": 96,
+          "minhumidity": 85
+        }
+      ]
+    }
+  }

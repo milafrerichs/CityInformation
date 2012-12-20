@@ -1,0 +1,451 @@
+{
+  "response":  {
+    "version": "0.1",
+    "termsofService": "http://www.wunderground.com/weather/api/d/terms.html",
+    "features":  {
+      "conditions": 1,
+      "geolookup": 1
+    }
+  },
+  "location":  {
+    "type": "INTLCITY",
+    "country": "FR",
+    "country_iso3166": "FR",
+    "country_name": "France",
+    "state": "",
+    "city": "Paris",
+    "tz_short": "CET",
+    "tz_long": "Europe/Paris",
+    "lat": "49.02000046",
+    "lon": "2.52999997",
+    "zip": "00000",
+    "magic": "1",
+    "wmo": "07157",
+    "l": "/q/zmw:00000.1.07157",
+    "requesturl": "global/stations/07157.html",
+    "wuiurl": "http://www.wunderground.com/global/stations/07157.html",
+    "nearby_weather_stations":  {
+      "airport":  {
+        "station":  [
+           {
+            "city": "Paris",
+            "state": "",
+            "country": "FR",
+            "icao": "LFPG",
+            "lat": "49.02000046",
+            "lon": "2.52999997"
+          },
+           {
+            "city": "Paris Le Bourget",
+            "state": "",
+            "country": "FR",
+            "icao": "LFPB",
+            "lat": "48.97000122",
+            "lon": "2.45000005"
+          },
+           {
+            "city": "Creil",
+            "state": "",
+            "country": "FR",
+            "icao": "LFPC",
+            "lat": "49.25000000",
+            "lon": "2.51999998"
+          }
+        ]
+      },
+      "pws":  {
+        "station":  [
+           {
+            "neighborhood": "",
+            "city": "GRESSY",
+            "state": "ILE-DE-FRANCE",
+            "country": "France",
+            "id": "IILEDEFR55",
+            "lat": 48.966984,
+            "lon": 2.671319,
+            "distance_km": 11,
+            "distance_mi": 7
+          },
+           {
+            "neighborhood": "Ile de France, France",
+            "city": "COUBRON",
+            "state": "ÎLE-DE-FRANCE",
+            "country": "FRANCE",
+            "id": "ILEDEFRA10",
+            "lat": 48.916172,
+            "lon": 2.568412,
+            "distance_km": 11,
+            "distance_mi": 7
+          },
+           {
+            "neighborhood": "",
+            "city": "CHAUMONTEL",
+            "state": "ILE-DE-FRANCE",
+            "country": "FRANCE",
+            "id": "IILEDEFR62",
+            "lat": 49.122692,
+            "lon": 2.431488,
+            "distance_km": 13,
+            "distance_mi": 8
+          },
+           {
+            "neighborhood": "Meteo 93",
+            "city": "Montfermeil",
+            "state": "SEINE SAINT DENIS",
+            "country": "FRANCE",
+            "id": "ISEINESA2",
+            "lat": 48.89558,
+            "lon": 2.552691,
+            "distance_km": 13,
+            "distance_mi": 8
+          },
+           {
+            "neighborhood": "APRSWXNET Paris FR",
+            "city": "Paris Le Bourget",
+            "state": "",
+            "country": "FR",
+            "id": "MD7698",
+            "lat": 48.873001,
+            "lon": 2.48533,
+            "distance_km": 16,
+            "distance_mi": 9
+          },
+           {
+            "neighborhood": "",
+            "city": "ROSNY SOUS BOIS",
+            "state": "Île-de-France",
+            "country": "France",
+            "id": "IILEDEFR64",
+            "lat": 48.870667,
+            "lon": 2.491427,
+            "distance_km": 16,
+            "distance_mi": 10
+          },
+           {
+            "neighborhood": "",
+            "city": "Neuilly-sur-Marne",
+            "state": "Ile-de-France",
+            "country": "FRANCE",
+            "id": "IBOBIGNY2",
+            "lat": 48.859058,
+            "lon": 2.517753,
+            "distance_km": 17,
+            "distance_mi": 10
+          },
+           {
+            "neighborhood": "",
+            "city": "Eaubonne",
+            "state": "ILE-DE-FRANCE",
+            "country": "FRANCE",
+            "id": "ILEDEFRA7",
+            "lat": 48.987358,
+            "lon": 2.269639,
+            "distance_km": 19,
+            "distance_mi": 11
+          },
+           {
+            "neighborhood": "",
+            "city": "Paris - 20eme arrondissement",
+            "state": "ILE DE FRANCE",
+            "country": "FRANCE",
+            "id": "IILEDEFR29",
+            "lat": 48.866634,
+            "lon": 2.395449,
+            "distance_km": 19,
+            "distance_mi": 11
+          },
+           {
+            "neighborhood": "Gouvieux, Avily-Saint-Leonard, Orry-La-Ville, Lamorlaye, Coye la Foret",
+            "city": "Chantilly",
+            "state": "Picardie",
+            "country": "FRANCE",
+            "id": "IPICARDI6",
+            "lat": 49.193256,
+            "lon": 2.473681,
+            "distance_km": 19,
+            "distance_mi": 11
+          },
+           {
+            "neighborhood": "",
+            "city": "Paris XX",
+            "state": "ILE-DE-FRANCE",
+            "country": "FRANCE",
+            "id": "IILEDEFR60",
+            "lat": 48.85424,
+            "lon": 2.397294,
+            "distance_km": 20,
+            "distance_mi": 12
+          },
+           {
+            "neighborhood": "Euro Disney",
+            "city": "Lagny-sur-Marne",
+            "state": "Ile-de-France",
+            "country": "FRANCE",
+            "id": "IILEDEFR47",
+            "lat": 48.875416,
+            "lon": 2.718719,
+            "distance_km": 21,
+            "distance_mi": 12
+          },
+           {
+            "neighborhood": "",
+            "city": "Argenteuil",
+            "state": "Val d'oise",
+            "country": "France",
+            "id": "IARGENTE1",
+            "lat": 48.950661,
+            "lon": 2.25,
+            "distance_km": 21,
+            "distance_mi": 13
+          },
+           {
+            "neighborhood": "",
+            "city": "SENLIS",
+            "state": "OISE",
+            "country": "FRANCE",
+            "id": "IOISESEN2",
+            "lat": 49.211945,
+            "lon": 2.596111,
+            "distance_km": 21,
+            "distance_mi": 13
+          },
+           {
+            "neighborhood": "paris",
+            "city": "Saint Maurice",
+            "state": "ILE DE FRANCE",
+            "country": "FRANCE",
+            "id": "IILEDEFR65",
+            "lat": 48.815304,
+            "lon": 2.46314,
+            "distance_km": 23,
+            "distance_mi": 13
+          },
+           {
+            "neighborhood": "",
+            "city": "Paris-centre",
+            "state": "Paris",
+            "country": "France",
+            "id": "I75003PA1",
+            "lat": 48.851727,
+            "lon": 2.335968,
+            "distance_km": 23,
+            "distance_mi": 14
+          },
+           {
+            "neighborhood": "",
+            "city": "Paris",
+            "state": "ILE-DE-FRANCE",
+            "country": "FRANCE",
+            "id": "IILEDEFR28",
+            "lat": 48.847187,
+            "lon": 2.33143,
+            "distance_km": 24,
+            "distance_mi": 14
+          },
+           {
+            "neighborhood": "Le Parc Saint Maur",
+            "city": "Saint Maur Des Fosses",
+            "state": "ILE DE FRANCE",
+            "country": "FRANCE",
+            "id": "IILEDEFR12",
+            "lat": 48.805,
+            "lon": 2.489,
+            "distance_km": 24,
+            "distance_mi": 14
+          },
+           {
+            "neighborhood": "",
+            "city": "Bezons",
+            "state": "VAL D'OISE",
+            "country": "FRANCE",
+            "id": "IVALDOIS2",
+            "lat": 48.930378,
+            "lon": 2.22305,
+            "distance_km": 24,
+            "distance_mi": 14
+          },
+           {
+            "neighborhood": "",
+            "city": "Meaux",
+            "state": "ÎLE-DE-FRANCE",
+            "country": "FRANCE",
+            "id": "ILEDEFRA19",
+            "lat": 48.974411,
+            "lon": 2.895059,
+            "distance_km": 27,
+            "distance_mi": 16
+          },
+           {
+            "neighborhood": "Sucy en Brie 94",
+            "city": "Sucy-en-Brie",
+            "state": "ILE-DE-FRANCE",
+            "country": "FRANCE",
+            "id": "IILEDEFR58",
+            "lat": 48.773994,
+            "lon": 2.510762,
+            "distance_km": 27,
+            "distance_mi": 16
+          },
+           {
+            "neighborhood": "",
+            "city": "Roissy-en-Brie",
+            "state": "Île-de-France",
+            "country": "France",
+            "id": "ILEDEFRA3",
+            "lat": 48.789963,
+            "lon": 2.670779,
+            "distance_km": 27,
+            "distance_mi": 16
+          },
+           {
+            "neighborhood": "",
+            "city": "Ozoir La Ferriere",
+            "state": "ÎLE-DE-FRANCE",
+            "country": "FRANCE",
+            "id": "ILEDEFRA12",
+            "lat": 48.77594,
+            "lon": 2.682488,
+            "distance_km": 29,
+            "distance_mi": 17
+          },
+           {
+            "neighborhood": "Seine et Marne",
+            "city": "Ozoir la Ferriere",
+            "state": "Seine et Marne",
+            "country": "France",
+            "id": "IOZOIRLA3",
+            "lat": 48.769604,
+            "lon": 2.658329,
+            "distance_km": 29,
+            "distance_mi": 17
+          },
+           {
+            "neighborhood": "Quartier du Grillon",
+            "city": "ERAGNY",
+            "state": "IDF",
+            "country": "FRANCE",
+            "id": "IIDFERAG2",
+            "lat": 49.01712,
+            "lon": 2.113466,
+            "distance_km": 30,
+            "distance_mi": 18
+          },
+           {
+            "neighborhood": "Pontoise",
+            "city": "Pontoise",
+            "state": "ÎLE-DE-FRANCE",
+            "country": "FRANCE",
+            "id": "ILEDEFRA8",
+            "lat": 49.058792,
+            "lon": 2.11647,
+            "distance_km": 30,
+            "distance_mi": 18
+          },
+           {
+            "neighborhood": "",
+            "city": "Eragny",
+            "state": "ILE-DE-FRANCE",
+            "country": "FRANCE",
+            "id": "IILEDEFR44",
+            "lat": 49.01527,
+            "lon": 2.105944,
+            "distance_km": 30,
+            "distance_mi": 18
+          },
+           {
+            "neighborhood": "",
+            "city": "Ozoir la Ferriere",
+            "state": "Melun",
+            "country": "France",
+            "id": "IOZOIRLA2",
+            "lat": 48.761585,
+            "lon": 2.690653,
+            "distance_km": 31,
+            "distance_mi": 18
+          }
+        ]
+      }
+    }
+  },
+  "current_observation":  {
+    "image":  {
+      "url": "http://icons-ak.wxug.com/graphics/wu2/logo_130x80.png",
+      "title": "Weather Underground",
+      "link": "http://www.wunderground.com"
+    },
+    "display_location":  {
+      "full": "Paris, France",
+      "city": "Paris",
+      "state": "",
+      "state_name": "France",
+      "country": "FR",
+      "country_iso3166": "FR",
+      "zip": "00000",
+      "latitude": "49.02000046",
+      "longitude": "2.52999997",
+      "elevation": "109.00000000"
+    },
+    "observation_location":  {
+      "full": "Paris, ",
+      "city": "Paris",
+      "state": "",
+      "country": "FR",
+      "country_iso3166": "FR",
+      "latitude": "49.02000046",
+      "longitude": "2.52999997",
+      "elevation": "358 ft"
+    },
+    "estimated":  {},
+    "station_id": "LFPG",
+    "observation_time": "Last Updated on December 18, 9:00 AM CET",
+    "observation_time_rfc822": "Tue, 18 Dec 2012 09:00:00 +0100",
+    "observation_epoch": "1355817600",
+    "local_time_rfc822": "Tue, 18 Dec 2012 09:29:01 +0100",
+    "local_epoch": "1355819341",
+    "local_tz_short": "CET",
+    "local_tz_long": "Europe/Paris",
+    "local_tz_offset": "+0100",
+    "weather": "Mostly Cloudy",
+    "temperature_string": "43 F (6 C)",
+    "temp_f": 43,
+    "temp_c": 6,
+    "relative_humidity": "93%",
+    "wind_string": "From the West at 8 MPH",
+    "wind_dir": "West",
+    "wind_degrees": 280,
+    "wind_mph": 8,
+    "wind_gust_mph": 0,
+    "wind_kph": 13,
+    "wind_gust_kph": 0,
+    "pressure_mb": "1012",
+    "pressure_in": "29.89",
+    "pressure_trend": "0",
+    "dewpoint_string": "41 F (5 C)",
+    "dewpoint_f": 41,
+    "dewpoint_c": 5,
+    "heat_index_string": "NA",
+    "heat_index_f": "NA",
+    "heat_index_c": "NA",
+    "windchill_string": "38 F (3 C)",
+    "windchill_f": "38",
+    "windchill_c": "3",
+    "feelslike_string": "38 F (3 C)",
+    "feelslike_f": "38",
+    "feelslike_c": "3",
+    "visibility_mi": "6.2",
+    "visibility_km": "10.0",
+    "solarradiation": "",
+    "UV": "0",
+    "precip_1hr_string": "-9999.00 in (-9999.00 mm)",
+    "precip_1hr_in": "-9999.00",
+    "precip_1hr_metric": "-9999.00",
+    "precip_today_string": "0.00 in (0.0 mm)",
+    "precip_today_in": "0.00",
+    "precip_today_metric": "0.0",
+    "icon": "mostlycloudy",
+    "icon_url": "http://icons-ak.wxug.com/i/c/k/mostlycloudy.gif",
+    "forecast_url": "http://www.wunderground.com/global/stations/07157.html",
+    "history_url": "http://www.wunderground.com/history/airport/LFPG/2012/12/18/DailyHistory.html",
+    "ob_url": "http://www.wunderground.com/cgi-bin/findweather/getForecast?query=49.02000046,2.52999997"
+  }
+}

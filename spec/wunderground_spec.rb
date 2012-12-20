@@ -22,6 +22,7 @@ describe Wunderground do
 		
 				it 'raises an error ' do
 					subject.stub(:buildQuery).with(query) { :return_value }
+					pending
 					#expect { wunderground.connect}.to raise_error(Net::HTTPServerException)
 				end
 			end

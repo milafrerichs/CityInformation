@@ -1,3 +1,7 @@
+require_relative 'cloudmade'
+require_relative 'weather'
+require_relative 'wunderground'
+
 class City
 	attr_accessor :name, :country, :latitude, :longitude, :locator, :weatherman, :weather_today, :weather_forecast
 	

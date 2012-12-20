@@ -22,7 +22,15 @@ describe CityInformation do
 			end
 	end
 
-	context '#weather' do
-		
+	context '#weatherInfo' do
+		it 'can show weather information' do
+			subject.should respond_to(:weatherInfo)
+		end
+		it 'calls city weather god' do
+			subject.city.country = "Germany"
+			subject.city.should_receive(:todays_weather)
+			subject.city.weather_today.stub(:temperature_celsius) { 2.5  }
+			subject.weatherInfo
+		end
 	end
 end

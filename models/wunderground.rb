@@ -1,35 +1,10 @@
-require 'net/http'
-require 'json'
-require 'addressable/uri'
+require_relative 'cityapi'
 
-class Wunderground
-	attr_reader :api_key,:api_url,:request_url, :response
-	
+class Wunderground < CityAPI
 	def initialize(api_key)
-		@api_key = api_key
+		super
 		@api_url = "http://api.wunderground.com/api/#{@api_key}/"
-		@request_url = Addressable::URI.parse @api_url
-	end
-	
-	def buildQuery(request_string)
-		@request_url = Addressable::URI.escape("#{@api_url}#{request_string}",Addressable::URI)
-		self
-	end
-	
-	def connect
-		response = Net::HTTP.get_response(@request_url)
 		
-		case response
-		when Net::HTTPSuccess
-		  response.body
-		else
-		  response.error!
-		end
-		
-	end
-	
-	def parseResponse
-		JSON.parse connect
 	end
 	
 	def weatherInfoForLatlng(latitude,longitude,feature)

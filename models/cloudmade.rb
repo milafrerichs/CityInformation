@@ -1,15 +1,13 @@
-require 'net/http'
-require 'json'
-require 'addressable/uri'
+require_relative 'cityapi'
 
-class Cloudmade
-	attr_reader :api_key, :api_url, :request_url,:city,:response
+class Cloudmade < CityAPI
+	attr_accessor :city
+	
 	def initialize(api_key)
-		@api_key = api_key
+		super
 		@api_url = "http://geocoding.cloudmade.com/#{@api_key}/geocoding/v2/find.js"
-		@request_url = Addressable::URI.parse @api_url
 		@city = ""
-		@response = ""
+		
 	end
 	def locate(city)
 		@city = city
@@ -32,27 +30,5 @@ class Cloudmade
 		else
 			raise RangeError, "Error Message" 
 		end
-	end
-	
-	def connect
-		response = Net::HTTP.get_response(@request_url)
-		
-		case response
-		when Net::HTTPSuccess
-		  response.body
-		else
-		  response.error!
-		end
-		
-	end
-	def parseResponse
-		
-			JSON.parse connect
-		
-	end
-	
-	def buildQuery(request_string)
-		@request_url = Addressable::URI.escape("#{@api_url}#{request_string}",Addressable::URI)
-		self
 	end
 end

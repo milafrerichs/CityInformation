@@ -16,8 +16,8 @@ class CityInformation
 end
 
 
-berlin = City.new("Berlin")
-berlin.country = "Germany"
-berlinInfo = CityInformation.new(berlin)
-p berlinInfo.getInfo
-p berlinInfo.weatherInfo
+#berlin = City.new("Berlin")
+#berlin.country = "Germany"
+#berlinInfo = CityInformation.new(berlin)
+#p berlinInfo.getInfo
+#p berlinInfo.weatherInfo

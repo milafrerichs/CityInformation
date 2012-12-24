@@ -8,28 +8,29 @@ describe Flickr do
 	
 	
 	context 'flickr api' do
-		describe '#get_flickr_place_id' do
-			let(:city) { stub(latitude: 13.38885, longitude: 52.51704) }
+		describe '#flickr_place_id_for_lat_lng' do
+			let(:latitude) { 13.38885 }
+			let(:longitude) { 52.51704 }
 			let(:response) { { "places" => { "place" => [ { "place_id" => "zUUW42ZTUb7y5HPznQ"}], "accuracy" => 16, "total" => 1 }, "stat" => "ok" } }
 			before {
 				subject.stub(:parseResponse).and_return(response)
 			}
 			it 'has latitutde and longitude' do
-				subject.should_receive(:get_flickr_place_id).with(city)
-				subject.get_flickr_place_id(city)
+				subject.should_receive(:flickr_place_id_for_lat_lng).with(latitude,longitude)
+				subject.flickr_place_id_for_lat_lng(latitude,longitude)
 			end
 			it 'builds the query' do
-				subject.should_receive(:buildQuery).with("?method=flickr.places.findByLatLon&api_key=d397b74cc2c8c86d4a042ffe10099ed3&lat=13.38885&lon=52.51704&format=json&nojsoncallback=1")
-				subject.get_flickr_place_id(city)
+				subject.should_receive(:buildQuery).with("?method=flickr.places.findByLatLon&api_key=d397b74cc2c8c86d4a042ffe10099ed3&format=json&nojsoncallback=1&lat=13.38885&lon=52.51704")
+				subject.flickr_place_id_for_lat_lng(latitude,longitude)
 			end
 			context 'returns flickr place id' do
 				it 'parses the result' do
 					subject.should_receive(:parseResponse)
-					subject.get_flickr_place_id(city)
+					subject.flickr_place_id_for_lat_lng(latitude,longitude)
 				end
 				it 'has a status ok' do
 					
-					expect(subject.get_flickr_place_id(city)).to eq "zUUW42ZTUb7y5HPznQ"
+					expect(subject.flickr_place_id_for_lat_lng(latitude,longitude)).to eq "zUUW42ZTUb7y5HPznQ"
 				end
 			end
 			context 'returns an error' do
@@ -53,7 +54,7 @@ describe Flickr do
 				subject.photos_for_place_id(place_id)
 			end
 			it 'builds the query' do
-				subject.should_receive(:buildQuery).with("?method=flickr.photos.search&api_key=d397b74cc2c8c86d4a042ffe10099ed3&place_id=zUUW42ZTUb7y5HPznQ&format=json&nojsoncallback=1")
+				subject.should_receive(:buildQuery).with("?method=flickr.photos.search&api_key=d397b74cc2c8c86d4a042ffe10099ed3&format=json&nojsoncallback=1&place_id=zUUW42ZTUb7y5HPznQ")
 				subject.photos_for_place_id(place_id)
 			end
 			it 'returns photos' do

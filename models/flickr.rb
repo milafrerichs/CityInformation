@@ -1,28 +1,42 @@
 require_relative 'cityapi'
 
 class Flickr < CityAPI
-	attr_accessor :photos
+	attr_reader :photos
 	def initialize(api_key)
 		super
 		@api_url = "http://api.flickr.com/services/rest/"
 		@photos = Array.new
 	end
 	
-	def get_flickr_place_id(city)
-		query_string = "?method=flickr.places.findByLatLon&api_key=#{@api_key}&lat=#{city.latitude}&lon=#{city.longitude}&format=json&nojsoncallback=1"
-		buildQuery(query_string)
+	def flickr_query(method)
+		"?method=#{method}&api_key=#{@api_key}&format=json&nojsoncallback=1"
+	end
+	
+	def query_successfull?
+		case @response["stat"]
+			when "ok" 
+				true
+			else 
+				false
+		end
+	end
+	
+	def call_api(query)
+		buildQuery(query)
 		@response = parseResponse
-		if @response["stat"] == "ok"
+		
+	end
+	def flickr_place_id_for_lat_lng(latitude,longitude)
+		call_api("#{flickr_query("flickr.places.findByLatLon")}&lat=#{latitude}&lon=#{longitude}")
+		if query_successfull?
 			@response["places"]["place"][0]["place_id"] unless @response["places"]["total"] < 1
 		end
 	end
 	
 	def photos_for_place_id(place_id)
 		
-		query_string = "?method=flickr.photos.search&api_key=#{@api_key}&place_id=#{place_id}&format=json&nojsoncallback=1"
-		buildQuery(query_string)
-		@response = parseResponse
-		if @response["stat"] == "ok"
+		call_api("#{flickr_query("flickr.photos.search")}&place_id=#{place_id}")
+		if query_successfull?
 			flickr_photos = @response["photos"]["photo"]
 			flickr_photos.each do |photo|
 				@photos << "http://farm#{photo["farm"]}.staticflickr.com/#{photo["server"]}/#{photo["id"]}_#{photo["secret"]}_q.jpg"

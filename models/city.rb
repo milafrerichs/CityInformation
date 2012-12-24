@@ -32,7 +32,7 @@ class City
 	end
 	
 	def cityphotos
-		@photographer.get_flickr_place_id(self)
+		@photographer.get_flickr_place_id(@latitude,@longitude)
 	end
 	
 end

@@ -33,4 +33,15 @@ describe CityInformation do
 			subject.weatherInfo
 		end
 	end
+	
+	context '#photos' do
+		it 'can show city photos' do
+			subject.should respond_to(:photos)
+		end
+		it 'reads the photographers' do
+			subject.city.stub(:cityphotos)
+			subject.city.should_receive(:cityphotos)
+			subject.photos
+		end
+	end
 end

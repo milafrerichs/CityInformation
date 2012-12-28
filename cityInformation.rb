@@ -4,14 +4,23 @@ class CityInformation
 	def initialize(city)
 		@city = city
 	end
+	
 	def getInfo
 		raise ArgumentError unless city.country
-		city.locate
-		"#{@city.name}: #{@city.latitude},#{@city.longitude}"
+		@city.locate
+		"#{@city}"
 	end
+	
 	def weatherInfo
-		city.todays_weather
-		"It is #{@city.weather_today.temperature_celsius} C and #{@city.weather_today.condition}"
+		@city.todays_weather
+		"It is #{@city.weather_today}"
+	end
+	
+	def photos
+		@city.cityphotos
+		@city.photos.each do |photo|
+			"#{photo}"
+		end
 	end
 end
 
@@ -21,3 +30,4 @@ berlin.country = "Germany"
 berlinInfo = CityInformation.new(berlin)
 p berlinInfo.getInfo
 p berlinInfo.weatherInfo
+p berlinInfo.photos

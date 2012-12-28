@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe Weather do
-	its(:temperature) { should be_nil}
+	its(:temperature) { should eq({C:0.0,F:0.0})}
 	its(:condition) { should be_nil}
 	its(:condition_icon) { should be_nil}
 	its(:high_low_temperature) { should be_nil}

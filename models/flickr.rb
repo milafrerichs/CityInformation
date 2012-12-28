@@ -42,5 +42,7 @@ class Flickr < CityAPI
 				@photos << "http://farm#{photo["farm"]}.staticflickr.com/#{photo["server"]}/#{photo["id"]}_#{photo["secret"]}_q.jpg"
 			end
 		end
+		@photos
+		
 	end
 end

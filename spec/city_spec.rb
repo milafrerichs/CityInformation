@@ -62,9 +62,22 @@ describe City do
 	
 	describe 'photos' do
 		context '#cityphotos' do
-			it 'adds photos to city photos' do
-				pending
-				#expect { subject.cityphotos}.to change { subject.photos }
+			before {
+				subject.photographer.stub(:flickr_place_id_for_lat_lng).and_return("abcd1234")
+				subject.photographer.stub(:photos_for_place_id).with("abcd1234").and_return(["",""])
+			}
+			it 'gets the flickr_place_id' do
+				subject.photographer.should_receive(:flickr_place_id_for_lat_lng).with(subject.latitude,subject.longitude).and_return("abcd1234")
+				subject.cityphotos
+			end
+			
+			it 'gets photos for the city ' do
+				subject.photographer.should_receive(:photos_for_place_id).with("abcd1234").and_return(["",""])
+				subject.cityphotos
+				
+			end
+			it 'returns photos of the city' do
+				expect { subject.cityphotos }.to change { subject.photos.size }.by(2)
 			end
 		end
 	end

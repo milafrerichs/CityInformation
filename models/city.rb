@@ -12,7 +12,13 @@ class City
 		@weatherman = Wunderground.new("b382e4b2e8ddc86b")
 		@weather_today = Weather.new
 		@photographer = Flickr.new("d397b74cc2c8c86d4a042ffe10099ed3")
+		@photos = Array.new
 	end
+	
+	def to_s
+		"#{@name} (#{@latitude}, #{@longitude})"
+	end
+	
 	def locate
 		loc = locator.locate(@name)
 		@latitude = loc[:latitude]
@@ -32,7 +38,8 @@ class City
 	end
 	
 	def cityphotos
-		@photographer.get_flickr_place_id(@latitude,@longitude)
+		place_id = @photographer.flickr_place_id_for_lat_lng(@latitude,@longitude)
+		@photos = @photographer.photos_for_place_id(place_id)
 	end
 	
 end
